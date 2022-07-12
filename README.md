@@ -1,10 +1,7 @@
-
-
+## Bikeshare
 ### Date created
 Include the date you created this README file:
 * 12 July 2022
-
-### Bikeshare
 
 ### Project Description
 In this project, **Python** is used to explore data related to bike share systems for three major cities in the United States that is, _Chicago, New York City, and Washington_. Code is written to _import_ the data and answer interesting questions about it by _computing descriptive statistics_.  A _python script_ that takes in raw input to create an interactive user experience in the terminal to present these statistics is written to provide answers to users. The project also _displays_ the raw data upon user request.
