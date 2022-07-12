@@ -1,4 +1,8 @@
 ## Bikeshare
+
+### Author Details
+* Thato Magadlela
+* Scholar at udacity
 ### Date created
 Include the date you created this README file:
 * 12 July 2022
