@@ -26,18 +26,18 @@ def get_filters():
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
         city = input('Enter the Valid name of the city you want to analyze[Chicago,New York city, Washington] : ').lower()
         if city in CITY_DATA:
-            break
+            return
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input("Enter the valid name of the month you want to analyze or enter all  [january, febuary, ..., june]:  ").lower()
         if month in ['january', 'february', 'march', 'april', 'may', 'june'] or month == 'all':
-            break
+            return
             
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input('Enter the valid day of the week you want to analyze or enter all[monday, tuesday, ..., sunday]: ').lower()
         if day in ['sunday', 'monday', 'tuesday', 'wednesday','thursday', 'friday', 'saturday' ] or day == 'all':
-            break
+            return
     
     print('-'*40)
     return city, month, day
@@ -155,7 +155,7 @@ def display_data(df):
     while True:
         view_data = input('Would you like to view next five row of raw data? [yes or no] : ').lower()
         if view_data != 'yes':
-            break
+            return
         i += 5
         print(df.iloc[i:i+5])
     
@@ -178,13 +178,13 @@ def main():
         while True:
             view_data = input('Would you like to view first five row of raw data? [yes or no] : ').lower()
             if view_data != 'yes':
-                break
+                return
             display_data(df)
-            break
+            return
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
-            break
+            return
 
 if __name__ == "__main__":
 	main()
